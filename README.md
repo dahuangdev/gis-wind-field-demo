@@ -1,2 +1,1 @@
-# gis-wind-field-demo
-Minimal reproducible demo: GIS wind-field pack/unpack precision regression (GLSL + test YAML + sample GRIB2 GeoJSON)
+Minimal demo for reproducing the GIS wind-field pack/unpack precision regression flow. Demo files to be added.
