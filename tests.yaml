@@ -1,0 +1,15 @@
+# pack 档位：风速分量范围（m/s），与 shaders/wind_pack.glsl 的 minV/maxV 一致
+pack_min: -60.0
+pack_max: 60.0
+# 门禁阈值
+weak_wind_threshold: 2.0
+max_abs_error_16bit: 0.01
+max_abs_error_8bit: 0.25
+max_abs_error_weak_wind: 0.05
+max_rel_error_strong_wind: 0.02
+# 用例：name, seed, n, speed_min, speed_max
+cases:
+  - strong_wind, 42, 500, 10.0, 55.0
+  - weak_wind, 7, 500, 0.0, 2.0
+  - zero_wind, 2026, 200, 0.0, 0.0
+  - mixed, 99, 500, 0.0, 60.0

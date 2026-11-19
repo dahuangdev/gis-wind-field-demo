@@ -1,0 +1,17 @@
+GIS wind-field pack/unpack precision regression
+pack range: [-60.0, 60.0] m/s, weak-wind threshold: 2.0 m/s
+gates: 16-bit max_abs<=0.010, 8-bit max_abs<=0.250, weak max_abs<=0.050, strong max_rel<=0.020
+------------------------------------------------------------------------------------------------
+case=strong_wind  n=500  bits=16 max_abs=0.0009 mean_abs=0.0005 max_abs_weak=0.0000 max_rel_strong=0.0001  PASS
+case=strong_wind  n=500  bits=8  max_abs=0.2345 mean_abs=0.1150 max_abs_weak=0.0000 max_rel_strong=0.0219  FAIL
+case=weak_wind    n=500  bits=16 max_abs=0.0009 mean_abs=0.0005 max_abs_weak=0.0009 max_rel_strong=0.0000  PASS
+case=weak_wind    n=500  bits=8  max_abs=0.2353 mean_abs=0.1239 max_abs_weak=0.2353 max_rel_strong=0.0000  FAIL
+case=zero_wind    n=200  bits=16 max_abs=0.0009 mean_abs=0.0009 max_abs_weak=0.0009 max_rel_strong=0.0000  PASS
+case=zero_wind    n=200  bits=8  max_abs=0.2353 mean_abs=0.2353 max_abs_weak=0.2353 max_rel_strong=0.0000  FAIL
+case=mixed        n=500  bits=16 max_abs=0.0009 mean_abs=0.0004 max_abs_weak=0.0009 max_rel_strong=0.0003  PASS
+case=mixed        n=500  bits=8  max_abs=0.2353 mean_abs=0.1183 max_abs_weak=0.2322 max_rel_strong=0.0737  FAIL
+------------------------------------------------------------------------------------------------
+geojson: 12 sample points, 16-bit max_abs=0.0009 max_abs_weak=0.0009  PASS
+================================================================================================
+VERDICT: production packing (16-bit) PASS
+note: 8-bit is reference only; it fails the weak-wind gate by design (step ~0.47 m/s vs weak signal 0-2 m/s)

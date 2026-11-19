@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "name": "grib2 wind sample points",
+  "features": [
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.40, 39.90]}, "properties": {"u": 3.20, "v": -1.10}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.45, 39.92]}, "properties": {"u": 0.40, "v": 0.30}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.50, 39.88]}, "properties": {"u": -0.80, "v": 0.60}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.42, 39.95]}, "properties": {"u": 12.50, "v": 4.20}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.48, 39.86]}, "properties": {"u": -8.30, "v": -6.10}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.38, 39.93]}, "properties": {"u": 0.00, "v": 0.00}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.52, 39.91]}, "properties": {"u": 1.50, "v": -0.90}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.44, 39.89]}, "properties": {"u": 22.70, "v": -11.40}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.47, 39.94]}, "properties": {"u": -3.60, "v": 2.80}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.41, 39.87]}, "properties": {"u": 0.90, "v": 1.20}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.49, 39.90]}, "properties": {"u": -15.20, "v": 9.80}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.43, 39.96]}, "properties": {"u": 5.40, "v": 5.40}}
+  ]
+}
